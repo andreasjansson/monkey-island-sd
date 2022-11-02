@@ -1,4 +1,4 @@
-# python train_dreambooth.py   --pretrained_model_name_or_path=diffusers-cache/models--runwayml--stable-diffusion-v1-5/snapshots/51b78538d58bd5526f1cf8e7c03c36e2799e0178    --instance_data_dir=dataset   --output_dir=dreambooth-output   --resolution=144   --train_batch_size=16   --gradient_accumulation_steps=1   --learning_rate=2e-6   --lr_scheduler="constant"   --lr_warmup_steps=0   --max_train_steps=2000 --use_8bit_adam --mixed_precision=fp16 --class_data_dir=class-data-dir --with_prior_preservation --num_class_images=500
+# python train_dreambooth.py   --pretrained_model_name_or_path=diffusers-cache/models--runwayml--stable-diffusion-v1-5/snapshots/51b78538d58bd5526f1cf8e7c03c36e2799e0178    --instance_data_dir=dataset   --output_dir=dreambooth-output   --resolution=144   --train_batch_size=16   --gradient_accumulation_steps=1   --learning_rate=2e-6   --lr_scheduler="constant"   --lr_warmup_steps=0   --max_train_steps=1600 --use_8bit_adam --mixed_precision=fp16 --class_data_dir=class-data-dir --with_prior_preservation --num_class_images=2000 --train_text_encoder
 
 from glob import glob
 import json
