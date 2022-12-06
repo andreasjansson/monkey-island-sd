@@ -18,8 +18,10 @@ The model was fine-tuned on a [customized version](https://github.com/andreasjan
 
 Training parameters:
 ```
+export MODEL_NAME="runwayml/stable-diffusion-v1-5"
+
 python train_dreambooth.py \
-    --pretrained_model_name_or_path=diffusers-cache/models--runwayml--stable-diffusion-v1-5/snapshots/51b78538d58bd5526f1cf8e7c03c36e2799e0178 \
+    --pretrained_model_name_or_path=$MODEL_NAME \
     --instance_data_dir=dataset \
     --output_dir=dreambooth-output \
     --resolution=144 \
