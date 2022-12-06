@@ -12,7 +12,7 @@ Each frame was then captioned with https://replicate.com/salesforce/blip and the
 
 ## Fine-tuning
 
-First, run `cog run script/download-weights` to download the SD 1.5 weights.
+First, run `cog run script/download-weights HUGGINGFACE_TOKEN` to download the SD 1.5 weights.
 
 The model was fine-tuned on a [customized version](https://github.com/andreasjansson/monkey-island-sd/blob/master/train_dreambooth.py) of the [Dreambooth training script in Diffusers](https://github.com/huggingface/diffusers/blob/main/examples/dreambooth/train_dreambooth.py).
 
